@@ -18,7 +18,7 @@ bun install -g joella-generator
 
 ## Usage
 ```sh
-Joella Generator generate -c config.json 
+joella-generator generate -c config.json 
 ```
 
 ### Example JSON Config
