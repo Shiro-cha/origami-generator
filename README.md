@@ -1,15 +1,51 @@
-# joella-generator
+# Joella Generator ;)
 
-To install dependencies:
+## Overview
+CLI Template Joella Generator is a command-line tool that automates the creation of directory structures and files based on JSON or YAML configuration files. This helps developers standardize project structures efficiently.
 
-```bash
-bun install
+## Features
+- ✅ **Generate**: Create a directory structure from a JSON/YAML template.
+- 🛠️ **Planned Features**:
+  - Validation of configuration files.
+  - Dry-run mode for previewing structure.
+  - Environment variable support.
+  - Advanced templating with placeholders.
+
+## Installation
+```sh
+bun install -g joella-generator
 ```
 
-To run:
-
-```bash
-bun run index.ts
+## Usage
+```sh
+cli-template-generator generate -c config.json 
 ```
 
-This project was created using `bun init` in bun v1.2.8. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+### Example JSON Config
+```json
+{
+  "root": "my_project",
+  "structure": {
+    "src": {
+      "index.ts": "console.log('Hello, world!');"
+    },
+    "README.md": "# My Project"
+  }
+}
+```
+
+### Example YAML Config
+```yaml
+root: my_project
+structure:
+  src:
+    index.ts: "console.log('Hello, world!');"
+  README.md: "# My Project"
+```
+
+## Contributing
+Contributions are welcome! Submit issues and pull requests on GitHub.
+
+## License
+MIT License.
+
