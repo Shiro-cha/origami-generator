@@ -1,38 +1,31 @@
 {
-    "name": "jl-generator",
-    "version": "1.0.0",
-    "description": "CLI for generating folder structures from JSON/YAML templates",
-    "module": "dist/cli.js",
-    "type": "module",
-    "bin": {
-      "folder-gen": "./dist/cli.js"
-    },
-    "scripts": {
-      "build": "bun build ./src/cli.ts --outfile ./dist/cli.js --target bun",
-      "start": "bun ./dist/cli.js",
-      "test": "bun test",
-      "lint": "bun x biome check ./src",
-      "format": "bun x biome format ./src --write"
-    },
-    "keywords": [
-      "cli",
-      "template",
-      "generator",
-      "productivity"
-    ],
-    "author": "Shiro-cha",
-    "license": "MIT",
-    "dependencies": {
-      "commander": "^11.1.0",
-      "js-yaml": "^4.1.0",
-      "zod": "^3.22.4"
-    },
-    "devDependencies": {
-      "@types/js-yaml": "^4.0.8",
-      "@types/node": "^20.11.7",
-      "biome": "^1.5.3"
-    },
-    "engines": {
-      "bun": ">=1.0.0"
-    }
+  "name": "joella-generator",i
+  "type": "module",
+  "bin": {
+    "joella": "./dist/cli.js",
+    "joella-generator": "./dist/cli.js"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "scripts": {
+    "compile": "bun build ./src/cli.ts --outfile ./dist/cli.js --target bun",
+    "start": "bun ./dist/cli.js",
+    "test": "bun test"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "commander": "11.1.0",
+    "dotenv": "^16.4.7",
+    "js-yaml": "4.1.0",
+    "zod": "3.22.4"
+  },
+  "author": "Shiro-cha <noum.rzdr@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shiro-cha/joella-generator.git"
   }
+}
