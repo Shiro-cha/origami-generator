@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+.bun/
+
+# Build outputs
+dist/
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+
+# Logs
+*.log
+logs/
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Test outputs
+test-output/
+coverage/
+
+# Bun specific
+.bun.lockb
+
+# Debug files
+*.debug
+
+# Local development files
+*.local
