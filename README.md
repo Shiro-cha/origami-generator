@@ -13,7 +13,7 @@ CLI Template Joella Generator is a command-line tool that automates the creation
 
 ## Installation
 ```sh
-bun install -g C
+bun install -g joella-generator
 ```
 
 ## Usage
