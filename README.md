@@ -1,7 +1,7 @@
-# Joella Generator ;)
+# Origami Generator ;)
 
 ## Overview
-CLI Template Joella Generator is a command-line tool that automates the creation of directory structures and files based on JSON or YAML configuration files. This helps developers standardize project structures efficiently.
+CLI Template origami Generator is a command-line tool that automates the creation of directory structures and files based on JSON or YAML configuration files. This helps developers standardize project structures efficiently.
 
 ## Features
 - ✅ **Generate**: Create a directory structure from a JSON/YAML template.
@@ -13,12 +13,12 @@ CLI Template Joella Generator is a command-line tool that automates the creation
 
 ## Installation
 ```sh
-bun install -g joella-generator
+bun install -g origami-generator
 ```
 
 ## Usage
 ```sh
-joella-generator generate -c config.json 
+origami-generator generate -c config.json 
 ```
 
 ### Example JSON Config
