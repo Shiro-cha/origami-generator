@@ -1,5 +1,5 @@
 {
-  "name": "origami-generator",i
+  "name": "origami-generator",
   "type": "module",
   "bin": {
     "joella": "./dist/cli.js",
