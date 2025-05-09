@@ -1,4 +1,4 @@
-# Origami Generator ;)
+# Origami Generator
 
 ## Overview
 CLI Template origami Generator is a command-line tool that automates the creation of directory structures and files based on JSON or YAML configuration files. This helps developers standardize project structures efficiently.
