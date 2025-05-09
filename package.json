@@ -8,7 +8,7 @@
   },
   "scripts": {
     "compile": "bun build ./src/cli.ts --outfile ./dist/cli.js --target node",
-    "build":"npm run compile"
+    "build":"npm run compile",
     "start": "node ./dist/cli.js",
     "test": "bun test"
   },
