@@ -1,18 +1,19 @@
 {
   "name": "origami-generator",
+  "version": "1.0.0",
   "type": "module",
   "bin": {
-    "joella": "./dist/cli.js",
-    "joella-generator": "./dist/cli.js"
-  },
-  "private": true,
-  "devDependencies": {
-    "@types/bun": "latest"
+    "origami": "./dist/cli.js",
+    "origami-generator": "./dist/cli.js"
   },
   "scripts": {
-    "compile": "bun build ./src/cli.ts --outfile ./dist/cli.js --target bun",
-    "start": "bun ./dist/cli.js",
+    "compile": "bun build ./src/cli.ts --outfile ./dist/cli.js --target node",
+    "build":"npm run compile"
+    "start": "node ./dist/cli.js",
     "test": "bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
@@ -26,6 +27,10 @@
   "author": "Shiro-cha <noum.rzdr@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Shiro-cha/joella-generator.git"
+    "url": "git+https://github.com/Shiro-cha/origami-generator.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
   }
 }
