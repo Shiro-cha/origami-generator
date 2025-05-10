@@ -9,6 +9,7 @@
   "scripts": {
     "compile": "bun build ./src/cli.ts --outfile ./dist/cli.js --target node",
     "build": "npm run compile",
+    "prepare": "npm run build",
     "start": "node ./dist/cli.js",
     "test": "bun test"
   },
@@ -16,7 +17,7 @@
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^5.0.0"
   },
   "dependencies": {
     "commander": "11.1.0",
@@ -27,7 +28,7 @@
   "author": "Shiro-cha <noum.rzdr@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Shiro-cha/origami-generator.git"
+    "url": "https://github.com/Shiro-cha/origami-generator.git"
   },
   "license": "MIT",
   "engines": {
